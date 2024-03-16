@@ -13,7 +13,6 @@ def main(args):
     csv_file_name = "output.csv"
     os.system(f"wget {args.url} -O {save_file_name}")
     os.system(f"gzip -d {save_file_name}")
-    print(args.url[:-3])
     df_iterator = pd.read_csv(csv_file_name, iterator=True, chunksize=100000)
 
     print("Inserting records into database...")
