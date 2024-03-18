@@ -34,3 +34,5 @@ override.tf.json
 # Ignore CLI configuration files
 .terraform*
 */keys/*
+
+*/.ipynb_checkpoints/*
